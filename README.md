@@ -35,6 +35,7 @@ type PDFGenerator interface {
 
     // 获取所有的输出行: 第一行的y坐标、高度、字体名称、字体大小、输出行(标题Name => 值)的channel
     GetRows() (firstY float64, height float64, fontFamily string, fontSize float64, rows <-chan map[string]string)
+}
 ```
 
 ## usage
